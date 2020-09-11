@@ -50,7 +50,7 @@
 		"test": "jest",
 		"build": "tsc",
 		"prepublish": "yarn build",
-		"pub": "yarn pub:npm && yarn:pub:gh",
+		"pub": "yarn pub:gh && yarn pub:npm",
 		"pub:npm": "yarn publish --access public && git push",
 		"pub:gh": "yarn login --registry=https://npm.pkg.github.com/ && yarn publish"
 	},
