@@ -1,12 +1,15 @@
 {
 	"name": "@bazo/react-layout-route",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Route with layout for react & react-router",
 	"repository": "git@github.com:bazo/react-layout-route",
 	"author": "Martin Bažík <martin@bazo.sk>",
 	"license": "MIT",
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
 	"devDependencies": {
 		"@types/enzyme": "^3.10.6",
 		"@types/enzyme-adapter-react-16": "^1.0.6",
@@ -47,7 +50,8 @@
 		"test": "jest",
 		"build": "tsc",
 		"prepublish": "yarn build",
-		"pub": "yarn publish --access public && git push"
+		"pub": "yarn publish --access public && git push",
+		"pub:gh": "yarn login --registry=https://npm.pkg.github.com/ && yarn publish"
 	},
 	"files": [
 		"lib/**/*"
