@@ -1,6 +1,6 @@
 {
 	"name": "@bazo/react-layout-route",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Route with layout for react & react-router",
 	"repository": "git@github.com:bazo/react-layout-route",
 	"author": "Martin Bažík <martin@bazo.sk>",
@@ -50,7 +50,8 @@
 		"test": "jest",
 		"build": "tsc",
 		"prepublish": "yarn build",
-		"pub": "yarn publish --access public && git push",
+		"pub": "yarn pub:npm && yarn:pub:gh",
+		"pub:npm": "yarn publish --access public && git push",
 		"pub:gh": "yarn login --registry=https://npm.pkg.github.com/ && yarn publish"
 	},
 	"files": [
