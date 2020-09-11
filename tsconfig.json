@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"lib": ["DOM", "ES6", "ESNext"],
+		"target": "ESNext",
+		"module": "ESNext",
+		"allowSyntheticDefaultImports": true,
+		"declaration": true,
+		"outDir": "./lib",
+		"strict": false,
+		"jsx": "react",
+		"moduleResolution": "node",
+		"esModuleInterop": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "**/__tests__/*"]
+}

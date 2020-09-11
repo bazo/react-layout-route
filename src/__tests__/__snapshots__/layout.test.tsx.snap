@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`with layout renders layout with children 1`] = `
+<div>
+  <h1>
+    My Layout
+  </h1>
+  <div>
+    child 1
+  </div>
+</div>
+`;
