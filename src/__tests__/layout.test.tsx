@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import WithLayout, { LayoutProps } from "../";
 import { render } from "enzyme";
 import { MemoryRouter, RouteProps } from "react-router";
 
-const Layout = ({ children, ...props }: { children: React.ReactNode } & LayoutProps<any>) => {
+const Layout: FC<LayoutProps<any>> = ({ children, ...props }) => {
 	return (
 		<div>
 			<h1>My Layout</h1>

@@ -20,7 +20,7 @@ const renderLayout = (
 };
 
 interface Props extends RouteProps {
-	layout: React.FC | React.Component;
+	layout: React.FC<LayoutProps> | React.Component<LayoutProps, any>;
 }
 
 const WithLayout: FC<Props> = ({ component, layout, ...props }: Props) => {
