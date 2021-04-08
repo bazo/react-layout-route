@@ -1,6 +1,6 @@
 {
 	"name": "@bazo/react-layout-route",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Route with layout for react & react-router",
 	"repository": "git@github.com:bazo/react-layout-route",
 	"author": "Martin Bažík <martin@bazo.sk>",
